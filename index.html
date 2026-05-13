@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNP & Co. | Chartered Accountants | Premium Advisory</title>
+    <link rel="icon" type="image/jpeg" href="fevicon.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        /* CRITICAL MOBILE FIX: Prevents horizontal scroll */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
         body { font-family: 'Outfit', sans-serif; }
         .serif-heading { font-family: 'Playfair Display', serif; }
         .ca-blue { color: #004a95; }
@@ -23,7 +30,6 @@
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden pb-32 md:pb-0">
 
-    <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 nav-sticky border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -34,35 +40,34 @@
                 <a href="#expertise" class="hover:ca-blue transition">Expertise</a>
                 <a href="#about" class="hover:ca-blue transition">The Firm</a>
                 <a href="#team" class="hover:ca-blue transition">Team</a>
-                <a href="tel:+919998292598" class="bg-ca-blue text-white px-8 py-3 rounded-full hover:shadow-xl transition-all">Connect Now</a>
+                <a href="tel:+919512309884" class="bg-ca-blue text-white px-8 py-3 rounded-full hover:shadow-xl transition-all">Connect Now</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section class="relative pt-40 pb-20 executive-gradient overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7" data-aos="fade-right">
                     <span class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-widest mb-6">Established Professionalism</span>
-                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-8 serif-heading">
+                    <h1 class="text-4xl md:text-7xl font-bold leading-tight mb-8 serif-heading break-words">
                         Precision in <span class="ca-blue italic">Finance.</span><br>
                         Absolute in <span class="ca-orange italic">Trust.</span>
                     </h1>
-                    <p class="text-xl text-slate-500 mb-10 max-w-xl leading-relaxed">
+                    <p class="text-lg md:text-xl text-slate-500 mb-10 max-w-xl leading-relaxed">
                         MNP & Co. provides comprehensive solutions in Audit, Taxation, and Consultancy, enabling businesses to navigate regulatory frameworks with precision and clarity.
                     </p>
                     <div class="flex flex-wrap gap-5">
                         <a href="#contact" class="bg-ca-blue text-white px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all">Schedule a Discussion</a>
                         <div class="flex items-center gap-3 px-6 py-4 rounded-xl border border-slate-200 bg-white">
-                            <span class="text-3xl font-bold ca-orange">13+</span>
+                            <span class="text-3xl font-bold ca-orange">18+</span>
                             <span class="text-xs font-bold text-slate-400 leading-tight uppercase">Years in<br>Practice</span>
                         </div>
                     </div>
                 </div>
                 <div class="lg:col-span-5 relative" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Executive Leadership" class="rounded-[3rem] shadow-2xl relative z-10">
-                    <div class="absolute -bottom-6 -left-6 bg-white p-8 rounded-3xl shadow-xl z-20 border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Executive Leadership" class="rounded-[3rem] shadow-2xl relative z-10 w-full h-auto">
+                    <div class="absolute -bottom-6 left-0 md:-left-6 bg-white p-6 md:p-8 rounded-3xl shadow-xl z-20 border border-slate-100 max-w-[90%] md:max-w-full">
                         <div class="text-3xl font-bold ca-blue">1000+</div>
                         <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Clients Served</div>
                     </div>
@@ -71,22 +76,21 @@
         </div>
     </section>
 
-    <!-- FIRM OVERVIEW -->
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-24 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div class="relative" data-aos="zoom-in">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000" class="rounded-[2.5rem] shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                    <img src="office_interior.jpg" alt="MNP & Co. Office" class="rounded-[2.5rem] shadow-2xl transition duration-700 w-full">
                     <div class="absolute inset-0 border-2 border-ca-blue m-6 rounded-[2.5rem] opacity-20"></div>
                 </div>
                 <div data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-8 serif-heading leading-tight text-slate-900">Comprehensive Professional Solutions under one roof.</h2>
+                    <h2 class="text-4xl font-bold mb-8 serif-heading leading-tight text-slate-900">Comprehensive Professional Solutions Under One Roof.</h2>
                     <p class="text-lg text-slate-600 leading-loose mb-10">
                         We offer a unified platform for <span class="font-bold text-slate-900">Statutory Audit, Strategic Taxation Advisory, Remote Accounting Solutions,</span> and <span class="font-bold text-slate-900">Equity Research</span>. Our firm leverages cross-functional expertise to ensure compliance and operational efficiency for diverse business models globally.
                     </p>
                     <div class="grid grid-cols-2 gap-8">
                         <div>
-                            <div class="text-2xl font-bold ca-blue">30+</div>
+                            <div class="text-2xl font-bold ca-blue">10+</div>
                             <div class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Industries</div>
                         </div>
                         <div>
@@ -99,7 +103,6 @@
         </div>
     </section>
 
-    <!-- EXPERTISE SECTION -->
     <section id="expertise" class="py-24 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -107,8 +110,6 @@
                 <div class="w-20 h-1 bg-ca-orange mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                
-                <!-- Audit & Assurance -->
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-3xl shadow-sm">📊</div>
@@ -121,7 +122,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Strategic Audit Solutions customized to meet your unique needs while ensuring rigorous statutory compliance.</p>
                 </div>
 
-                <!-- Taxation -->
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center text-3xl shadow-sm">⚖️</div>
@@ -134,7 +134,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Professional expertise in GST and Income Tax compliance, planning, and regulatory representation.</p>
                 </div>
 
-                <!-- Remote Accounting -->
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-3xl shadow-sm">☁️</div>
@@ -146,11 +145,10 @@
                     <img src="Cloud Accounting.jpg" alt="Accounting" class="w-full h-48 object-cover rounded-3xl mb-6 shadow-md">
                     <p class="text-slate-500 text-sm leading-relaxed">Cloud-based bookkeeping for international clients leveraging professional QuickBooks and Xero environments.</p>
                 </div>
-
-                <!-- Equity Research -->
+                
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-3xl shadow-sm text-ca-green">📈</div>
+                        <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-3xl text-ca-green shadow-sm">📈</div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-900">Equity Research</h3>
                             <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Analysis</p>
@@ -160,7 +158,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Providing fundamental analysis and sector insights to support long-term investment decisions.</p>
                 </div>
 
-                <!-- Project Finance -->
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-3xl shadow-sm">🏦</div>
@@ -173,7 +170,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Financial projections, loan structuring, and funding support for new and expansion projects.</p>
                 </div>
 
-                <!-- Advisory -->
                 <div class="bento-card rounded-[2.5rem] overflow-hidden p-8" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-3xl shadow-sm">📋</div>
@@ -189,40 +185,39 @@
         </div>
     </section>
 
-    <!-- LEADERSHIP TEAM -->
-    <section id="team" class="py-24 bg-white">
+    <section id="team" class="py-24 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-20 serif-heading text-slate-900">Leadership Team</h2>
             <div class="grid lg:grid-cols-2 gap-10">
                 <div class="bg-slate-50 rounded-[3rem] p-10 border border-slate-100 flex flex-col md:flex-row gap-10 items-start" data-aos="fade-right">
-                    <img src="Manish Khandelwal.jpg" alt="Manish Khandelwal" class="w-44 h-44 rounded-[2rem] object-cover shadow-lg flex-shrink-0 grayscale hover:grayscale-0 transition duration-500">
+                    <img src="Manish Khandelwal.jpg" alt="Manish Khandelwal" class="w-44 h-44 rounded-[2rem] object-contain bg-white shadow-lg flex-shrink-0">
                     <div class="flex-1">
-                        <h4 class="text-2xl font-bold mb-1 text-slate-900">Manish Khandelwal</h4>
+                        <h4 class="text-3xl font-bold mb-1 text-slate-900">Manish Khandelwal</h4>
                         <p class="ca-blue font-bold text-xs mb-6 uppercase tracking-[0.2em]">FCA, CS, DISA, B.Com</p>
                         <ul class="space-y-4 text-slate-600 text-sm mb-8">
-                            <li class="flex items-start gap-3"><span>•</span> 15+ years of experience across Audit and Taxation.</li>
-                            <li class="flex items-start gap-3"><span>•</span> Specialized expert in Virtual CFO Services.</li>
-                            <li class="flex items-start gap-3"><span>•</span> ICAI Certified Equity Research Analyst.</li>
+                            <li>• 15+ years of experience in Audit and Taxation.</li>
+                            <li>• Specialized expert in Virtual CFO Services.</li>
+                            <li>• ICAI Certified Equity Research Analyst.</li>
                         </ul>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-[10px] font-bold text-slate-400 uppercase">FAFD</span>
-                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-[10px] font-bold text-slate-400 uppercase">AI Certified</span>
+                        <div class="flex gap-3">
+                            <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-[10px] font-bold text-slate-400 uppercase tracking-widest">FAFD</span>
+                            <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-[10px] font-bold text-slate-400 uppercase tracking-widest">AI Certified</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-slate-50 rounded-[3rem] p-10 border border-slate-100 flex flex-col md:flex-row gap-10 items-start" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Payal Khandelwal" class="w-44 h-44 rounded-[2rem] object-cover shadow-lg flex-shrink-0">
+                    <img src="Payal Khandelwal Pic.jpg" alt="Payal Khandelwal" class="w-44 h-44 rounded-[2rem] object-contain bg-white shadow-lg flex-shrink-0">
                     <div class="flex-1">
-                        <h4 class="text-2xl font-bold mb-1 text-slate-900">Payal Khandelwal</h4>
+                        <h4 class="text-3xl font-bold mb-1 text-slate-900">Payal Khandelwal</h4>
                         <p class="ca-blue font-bold text-xs mb-6 uppercase tracking-[0.2em]">FCA, LLB, B.Com</p>
                         <ul class="space-y-4 text-slate-600 text-sm mb-8">
-                            <li class="flex items-start gap-3"><span>•</span> Seasoned Auditor with 15 years in professional practice.</li>
-                            <li class="flex items-start gap-3"><span>•</span> Former professional at Kotak Mahindra & Essar Projects.</li>
-                            <li class="flex items-start gap-3"><span>•</span> Specialist in Global Remote Accounting solutions.</li>
+                            <li>• Seasoned Auditor with 15 years in professional practice.</li>
+                            <li>• Former professional at Kotak Mahindra & Essar Projects.</li>
+                            <li>• Specialist in Global Remote Accounting solutions.</li>
                         </ul>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-[10px] font-bold text-slate-400 uppercase">Legal Expert</span>
-                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-[10px] font-bold text-slate-400 uppercase">ProAdvisor</span>
+                        <div class="flex gap-3">
+                            <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-[10px] font-bold text-slate-400 uppercase tracking-widest">Legal Expert</span>
+                            <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-[10px] font-bold text-slate-400 uppercase tracking-widest">Proadvisor</span>
                         </div>
                     </div>
                 </div>
@@ -230,37 +225,36 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-20">
                 <div data-aos="fade-up">
                     <h2 class="text-sm font-bold ca-orange uppercase tracking-[0.4em] mb-6">Inquiry</h2>
                     <h3 class="text-5xl font-bold mb-12 serif-heading">Connect for Professional <br><span class="text-slate-400 italic">Discussion.</span></h3>
-                    <div class="space-y-12">
+                    <div class="space-y-12 text-left">
                         <div class="flex items-start gap-6">
                             <div class="text-ca-orange text-2xl font-bold">📍</div>
                             <div>
                                 <h4 class="font-bold text-sm uppercase text-slate-400 mb-2 tracking-widest">Office Address</h4>
-                                <p class="text-slate-300 text-lg">SNS Atria, B-214, opp. Jolly Party Plot, Vesu, Surat, Gujarat 395007</p>
+                                <p class="text-slate-300 text-lg">B-214, SNS Atria, Opp. Jolly Party Plot, Vesu, Surat, Gujarat 395007</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-6">
                             <div class="text-ca-orange text-2xl font-bold">📞</div>
                             <div>
                                 <h4 class="font-bold text-sm uppercase text-slate-400 mb-2 tracking-widest">Direct Line</h4>
-                                <a href="tel:+919998292598" class="text-4xl font-bold tracking-tighter hover:text-blue-400 transition">+91 99982 92598</a>
+                                <a href="tel:+919512309884" class="text-4xl font-bold tracking-tighter hover:text-blue-400 transition">+91 95123 09884</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/5 p-12 rounded-[3rem] border border-white/10 shadow-2xl" data-aos="fade-left">
+                <div class="bg-white/5 p-8 md:p-12 rounded-[3rem] border border-white/10 shadow-2xl" data-aos="fade-left">
                     <form action="https://formspree.io/f/your-id" method="POST" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <input type="text" name="name" placeholder="Full Name" required class="w-full bg-white/10 border-none px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all">
-                            <input type="tel" name="phone" placeholder="Mobile Number" required class="w-full bg-white/10 border-none px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all">
+                        <div class="grid md:grid-cols-2 gap-6 text-slate-900">
+                            <input type="text" name="name" placeholder="Full Name" required class="w-full bg-white/10 text-white px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all">
+                            <input type="tel" name="phone" placeholder="Mobile Number" required class="w-full bg-white/10 text-white px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all">
                         </div>
-                        <textarea name="message" placeholder="Message / Service Requirement" rows="5" required class="w-full bg-white/10 border-none px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all"></textarea>
+                        <textarea name="message" placeholder="Message / Service Requirement" rows="5" required class="w-full bg-white/10 text-white px-8 py-5 rounded-2xl focus:ring-2 focus:ring-ca-blue outline-none transition-all"></textarea>
                         <button type="submit" class="w-full bg-ca-orange text-white py-5 rounded-2xl font-bold text-lg hover:shadow-[0_0_30px_rgba(242,101,34,0.3)] transition-all">Connect With Us</button>
                     </form>
                 </div>
@@ -268,28 +262,23 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-20 text-center border-t border-slate-100 bg-white">
+    <footer class="py-20 text-center border-t border-slate-100 bg-white overflow-hidden">
         <div class="flex items-center justify-center gap-3 mb-10">
             <img src="CA Logo_2.jpg" class="h-8">
             <span class="text-xl font-bold uppercase tracking-widest text-slate-800">MNP <span class="ca-blue">& Co.</span></span>
         </div>
-        <p class="text-[10px] text-slate-400 max-w-2xl mx-auto italic mb-10 uppercase tracking-[0.25em] leading-relaxed">
+        <p class="text-[10px] text-slate-400 max-w-2xl mx-auto italic mb-10 uppercase tracking-[0.25em] leading-relaxed px-6">
             DISCLAIMER: This website is meant solely for informational purposes and does not constitute solicitation or advertisement in accordance with ICAI regulations.
         </p>
         <div class="text-xs font-bold text-slate-300 uppercase tracking-[0.4em]">&copy; 2026 MNP & Co.</div>
     </footer>
 
-    <!-- STICKY MOBILE CTA BAR -->
     <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 p-4 flex gap-4 z-50">
-        <a href="tel:+919998292598" class="flex-1 bg-ca-blue text-white text-center py-4 rounded-2xl font-bold shadow-lg">Call</a>
-        <a href="https://wa.me/919998292598" class="flex-1 bg-green-500 text-white text-center py-4 rounded-2xl font-bold shadow-lg">WhatsApp</a>
+        <a href="tel:+919512309884" class="flex-1 bg-ca-blue text-white text-center py-4 rounded-2xl font-bold shadow-lg">Call</a>
+        <a href="https://wa.me/919512309884" class="flex-1 bg-green-500 text-white text-center py-4 rounded-2xl font-bold shadow-lg">WhatsApp</a>
     </div>
 
-    <!-- FIXED WHATSAPP BUTTON (DESKTOP) -->
-    <a href="https://wa.me/919998292598" class="hidden md:flex fixed bottom-10 right-10 bg-green-500 text-white w-20 h-20 rounded-full shadow-2xl items-center justify-center text-4xl hover:scale-110 transition-all z-50">
-        💬
-    </a>
+    <a href="https://wa.me/919512309884" class="hidden md:flex fixed bottom-10 right-10 bg-green-500 text-white w-20 h-20 rounded-full shadow-2xl items-center justify-center text-4xl hover:scale-110 transition-all z-50">💬</a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({ duration: 1200, once: true });</script>
